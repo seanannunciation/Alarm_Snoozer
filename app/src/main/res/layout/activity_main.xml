@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="com.example.annse.myapplication.MainActivity">
+
+    <TimePicker
+        android:id="@+id/alarmclock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        android:headerBackground="@android:color/darker_gray"
+        android:numbersSelectorColor="@android:color/holo_blue_dark" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarmclock"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:background="@android:color/black"
+        android:text="SET ALARM"
+        android:textColor="@android:color/white"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="ALARM TIME"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:text="ALARM TIME" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:background="@android:color/black"
+        android:text="ALARM OFF"
+        android:textColor="@android:color/white"
+        android:textColorLink="@android:color/black" />
+
+
+</RelativeLayout>
